@@ -10,7 +10,7 @@
 
 1. 유미/규빈  
 **Uncovering the novel characteristics of *Asian honey bee*, Apis cerana, by whole genome sequencing.**  
-Park D, Jung JW, Choi BS ... KWON HW.  
+Park D, Jung JW, Choi BS ... Kwon HW.  
 *BMC Genomics* 2015;16(1);1 [![DOI](https://zenodo.org/badge/doi/10.1186/1471-2164-16-1.svg)](https://doi.org/10.1186/1471-2164-16-1)  
 
 2. 병주  
