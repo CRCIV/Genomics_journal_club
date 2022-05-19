@@ -14,6 +14,6 @@ Park D, Jung JW, Choi BS ... KWON HW.
 *BMC Genomics* 2015;16(1);1 [![DOI](https://zenodo.org/badge/doi/10.1186/1471-2164-16-1.svg)](https://doi.org/10.1186/1471-2164-16-1)  
 
 2. 병주  
-**Genetic Properties and Evolution of Asian Honey Bee Apis cerana ussuriensis from Primorsky Krai, Russia**  
+**Genetic Properties and Evolution of Asian Honey Bee A*pis cerana ussuriensis* from Primorsky Krai, Russia**  
 Ilyasov RA, Han GY, Lee ML, ..., H. W. Kwon & A. G. Nikolenko.  
 *Russian Journal of Genetics* 2021; 57; 568–581. [![DOI](https://zenodo.org/badge/doi/10.1134/S1022795421050033.svg)](https://doi.org/10.1134/S1022795421050033)
