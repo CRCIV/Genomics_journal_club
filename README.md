@@ -7,13 +7,22 @@
 - 장소 : 29호관 315호
 
 
+##
 
-## Upcoming Event : 2022-06-10 
+
+## Upcoming Event : 2022-06-10
 
 1. 규빈
-[Benefits and limitations of genome- wide association studies](https://sci-hub.hkvisa.net/10.1038/s41576-019-0127-1)
-Vivian Tam, Nikunj Patel, Michelle Turcotte, Yohan Bossé, Guillaume Paré & David Meyre 
+[**Benefits and limitations of genome- wide association studies**](https://sci-hub.hkvisa.net/10.1038/s41576-019-0127-1)  
+Vivian Tam, Nikunj Patel, Michelle Turcotte, Yohan Bossé, Guillaume Paré & David Meyre  
 Nature Reviews Genetics volume 20, pages467–484 (2019)
+
+
+2. 유미  
+[Comparative study of population genomic approaches for mapping colony-level traits](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007653)
+Shani Inbar ,Pnina Cohen ,Tal Yahav,Eyal Privman  
+PLoS Comput Biol. 2020 Mar 27;16(3):e1007653. doi: 10.1371/journal.pcbi.1007653.
+
 
 ## Past event :2022-05-27
 
