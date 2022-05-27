@@ -19,7 +19,7 @@ Nature Reviews Genetics volume 20, pages467–484 (2019)
 
 
 2. 유미  
-[Comparative study of population genomic approaches for mapping colony-level traits](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007653)
+[Comparative study of population genomic approaches for mapping colony-level traits](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007653). 
 Shani Inbar ,Pnina Cohen ,Tal Yahav,Eyal Privman  
 PLoS Comput Biol. 2020 Mar 27;16(3):e1007653. doi: 10.1371/journal.pcbi.1007653.
 
