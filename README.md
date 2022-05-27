@@ -15,9 +15,9 @@ Liu Nannan, Liu Huamiao, ..., Xing Xiumei
 *BMC Genomics*. 2022. 23: 64.
 
 2. 정현  
-[**Coming of age: ten years of next- generation sequencing technologies**](https://sci-hub.hkvisa.net/10.1038/nrg.2016.49). 
+[**Coming of age: ten years of next- generation sequencing technologies**](https://sci-hub.hkvisa.net/10.1038/nrg.2016.49)  
 Sara Goodwin, John D. McPherson, ... , Richard McCombie1. 
-*Nat Rev Genet.* 2016; 17(6);333-351. [![DOI]((https://zenodo.org/badge/doi/10.1038/nrg.2016.49)](https://sci-hub.hkvisa.net/10.1038/nrg.2016.49)
+*Nat Rev Genet.* 2016; 17(6);333-351. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg.2016.49)](https://sci-hub.hkvisa.net/10.1038/nrg.2016.49)
 
 
 ## Upcoming Event : 2022-06-10
