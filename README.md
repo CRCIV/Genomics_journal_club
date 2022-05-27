@@ -12,7 +12,7 @@
 
 ## Upcoming Event : 2022-06-10
 
-1. 규빈
+1. 규빈  
 [**Benefits and limitations of genome- wide association studies**](https://sci-hub.hkvisa.net/10.1038/s41576-019-0127-1)  
 Vivian Tam, Nikunj Patel, Michelle Turcotte, Yohan Bossé, Guillaume Paré & David Meyre  
 Nature Reviews Genetics volume 20, pages467–484 (2019)
