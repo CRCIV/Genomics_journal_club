@@ -6,7 +6,16 @@
 
 - 장소 : 29호관 315호
 
-## Upcoming event :2022-05-27
+
+
+## Upcoming Event : 2022-06-10 
+
+1. 규빈
+[Benefits and limitations of genome- wide association studies](https://sci-hub.hkvisa.net/10.1038/s41576-019-0127-1)
+Vivian Tam, Nikunj Patel, Michelle Turcotte, Yohan Bossé, Guillaume Paré & David Meyre 
+Nature Reviews Genetics volume 20, pages467–484 (2019)
+
+## Past event :2022-05-27
 
 1. 유미/규빈  
 **Uncovering the novel characteristics of *Asian honey bee*, Apis cerana, by whole genome sequencing.**  
