@@ -7,7 +7,13 @@
 - 장소 : 29호관 315호
 
 
-##
+## Upcoming Event : 2022-06-03
+
+
+[**Geometric morphology and population genomics provide insights into the adaptive evolution of Apis cerana in Changbai Mountain**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8772121/)  
+Liu Nannan, Liu Huamiao, ..., Xing Xiumei  
+BMC Genomics. 2022; 23: 64.
+
 
 
 ## Upcoming Event : 2022-06-10
