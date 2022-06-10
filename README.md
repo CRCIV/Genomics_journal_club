@@ -27,10 +27,12 @@ Vivian Tam, Nikunj Patel, Michelle Turcotte, Yohan Bossé, Guillaume Paré & Dav
 Shani Inbar ,Pnina Cohen and Tal Yahav,Eyal Privman  
 *PLoS Comput Biol.* 2020 16(3):e1007653. doi: 10.1371/journal.pcbi.1007653.
 
-2. 병주
-A beginner's guide to eukaryotic genome annotation.
+2. 병주  
+A beginner's guide to eukaryotic genome annotation.  
 Yandell M and Ence D.  
-*Nat Rev Genet* 2012 13;329–342. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg3174.svg)](https://doi.org/10.1038/nrg3174)
+*Nat Rev Genet* 2012 13;329–342. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg3174.svg)](https://doi.org/10.1038/nrg3174).   
+(\+ current *Apis cerana* genome annotation)
+
 
 ## Past Event : 2022-06-03
 
