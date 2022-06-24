@@ -8,31 +8,32 @@
 
 
 
-## Upcoming Event : 2022-06-10
+## Upcoming Event : 2022-06-24
 
 1. 정현  
 [**Coming of age: ten years of next- generation sequencing technologies**](https://sci-hub.hkvisa.net/10.1038/nrg.2016.49)  
 Sara Goodwin, John D. McPherson, ... , Richard McCombie.  
 *Nat Rev Genet.* 2016; 17(6);333-351. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg.2016.49.svg)](https://sci-hub.hkvisa.net/10.1038/nrg.2016.49)
 
-2. 규빈  
-[**Benefits and limitations of genome- wide association studies**](https://sci-hub.hkvisa.net/10.1038/s41576-019-0127-1)  
-Vivian Tam, Nikunj Patel, Michelle Turcotte, Yohan Bossé, Guillaume Paré & David Meyre  
-*Nat Rev Genet.* 2019;20; 467–484 
-
-## Upcoming Event : 2022-06-17
-
-1. 유미  
+2. 유미  
 [Comparative study of population genomic approaches for mapping colony-level traits](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007653)  
 Shani Inbar ,Pnina Cohen and Tal Yahav,Eyal Privman  
 *PLoS Comput Biol.* 2020 16(3):e1007653. doi: 10.1371/journal.pcbi.1007653.
 
-2. 병주  
+## Upcoming Event : 2022-07-01
+
+1. 병주  
 A beginner's guide to eukaryotic genome annotation.  
 Yandell M and Ence D.  
 *Nat Rev Genet* 2012 13;329–342. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg3174.svg)](https://doi.org/10.1038/nrg3174).   
 (\+ current *Apis cerana* genome annotation)
 
+## Past Event : 2022-06-10
+
+1. 규빈  
+[**Benefits and limitations of genome- wide association studies**](https://sci-hub.hkvisa.net/10.1038/s41576-019-0127-1)  
+Vivian Tam, Nikunj Patel, Michelle Turcotte, Yohan Bossé, Guillaume Paré & David Meyre  
+*Nat Rev Genet.* 2019;20; 467–484 
 
 ## Past Event : 2022-06-03
 
