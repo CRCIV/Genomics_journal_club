@@ -127,7 +127,7 @@ rm *.merged*.txt                ## *은 모든 문자에 해당하는 문자입�
  cmd >> /dev/null
 ```
  
-  - **2>** Error output (stderr) of cmd to file
+  - **2>** 표준에러를 파일로 저장.
 
 ```
  cmd 2> file
@@ -229,20 +229,21 @@ grep -B1 'TTAGG\|CCTAA' <file> ## 퍼일에서 TTAGG 혹은 CCTAA 를 가지고 
 
 ## cat
 
+한번에 모든 파일 내용을 출력. 파일이 너무 클 경우 현기증 나는 상황이 발생할 수 있음 (가령, 10분 넘게 출력되는 파일을 보게 된다거나..)
+
 ```bash
-
-
+car <file>
 ```
 
 ## less/more
 
+cat 의 단점을 보완하기 위해 만들어진 명령어로, 한번에 일정한 수준의 파일만 보고 그 후에 더 볼지 안볼지를 결정할 수 있음.
+`q` 키룰 눌러서 종료할수 있으며, `down` arrow 키를 눌러서 파일을 계속 볼 수 있음
 
-How can we view files? This depends on the type of file we're working with, which is specified by the extension. Most files we'll work with are composed of some kind of text such as .txt files, .py files, .R files, etc. Here are some approaches to view their contents quickly:
+```bash
+cat <file>
+```
 
-cat: View all the contents of a file. This command is short for "concatenate", because it can be applied to multiple files.
-Try using cat on one of the files in this directory.
-less: This is useful when your file is too big for cat, and you quickly just want to see a small portion of it.
-Try using less on one of the file in this directory.
 
 
 ## sed/tr
