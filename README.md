@@ -7,6 +7,16 @@
 - 장소 : 29호관 315호
 
 
+## Upcoming Event : 2022-07-01
+
+1. 병주  
+A beginner's guide to eukaryotic genome annotation.  
+Yandell M and Ence D.  
+*Nat Rev Genet* 2012 13;329–342. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg3174.svg)](https://doi.org/10.1038/nrg3174).   
+(\+ current *Apis cerana* genome annotation)
+
+2. 병주
+basic bash script lecture
 
 ## Upcoming Event : 2022-06-24
 
@@ -19,14 +29,6 @@ Sara Goodwin, John D. McPherson, ... , Richard McCombie.
 [Comparative study of population genomic approaches for mapping colony-level traits](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007653)  
 Shani Inbar ,Pnina Cohen and Tal Yahav,Eyal Privman  
 *PLoS Comput Biol.* 2020 16(3):e1007653. doi: 10.1371/journal.pcbi.1007653.
-
-## Upcoming Event : 2022-07-01
-
-1. 병주  
-A beginner's guide to eukaryotic genome annotation.  
-Yandell M and Ence D.  
-*Nat Rev Genet* 2012 13;329–342. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg3174.svg)](https://doi.org/10.1038/nrg3174).   
-(\+ current *Apis cerana* genome annotation)
 
 ## Past Event : 2022-06-10
 
