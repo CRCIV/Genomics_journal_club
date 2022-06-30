@@ -244,9 +244,24 @@ cat 의 단점을 보완하기 위해 만들어진 명령어로, 한번에 일�
 cat <file>
 ```
 
-
-
 ## sed/tr
+
+파일의 문자열을 수정.
+
+```bash
+  echo "hello world hello" | tr "h" "T"
+  echo "hello world hello" | sed -e 's/hello/bye/g' ## 모든 hello 를 bye 로 치환
+  echo "hello world hello" | sed -e 's/hello/bye/' ## 처음발견하는 hello 를 bye 로 치환
+  
+  echo "hello world hello" | sed -e 's/[he]/1/g'  ## h 혹은 e 를 1로 치환
+  echo "hello world hello" | sed -e 's/^[he]/1/'  ## 문자열의 시작 h or e 를 1로 치환
+  echo "hello world hello" | sed -e 's/[lo]$/1/g' ## 문자열의 마지막 l 혹은 o 를 1로 치환
+  
+  echo "hello WORLD hello" | sed 's/[a-z]/1/g' ## 처음부터 끝까지 소문자들을 전부 1로 바꿈
+  echo "hello WORLD hello" | sed 's/[A-Z]/1/g' ## 처음부터 끝까지 대문자들을 전부 1로 바꿈
+  
+  echo "hello WORLD hello" | sed -e 's/l/L/3'  ## 3번째 l 매칭만 대문자인 L 로 바꾼다.
+```
 
 ## 문자열 뒤집기
 
