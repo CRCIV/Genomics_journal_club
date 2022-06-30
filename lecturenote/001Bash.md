@@ -37,15 +37,81 @@
  cmd --help
  cmd -h
 ```
-## 파일 관련
+## 파일 I/O
 
 ```bash
 echo "Hello CRCIV"              ## Hello CRCIV 라는 문장을 출력
-echo "Hello CRCIV" > hello.txt  ## hello CRCIV 라는 문장을 hello.txt 라는 파일에 저장.
-echo "Hello CRCIV" >> hello.txt ## hello CRCIV 라는 문장을 hello.txt 라는 파일위 맨 뒤에 이어서붙임.
+echo "Hello CRCIV" > hello.txt  ## hello CRCIV 라는 문장을 hello.txt 라는 파일에 저장 (덮어쓰기)
+head hello.txt                  ## hello.txt 파일의 첫 10 줄을 프린트. ( -n 10 옵션이 기본 )
+echo "Hello CRCIV" >> hello.txt ## hello CRCIV 라는 문장을 hello.txt 라는 파일위 맨 뒤에 이어서 쓰기 (이어쓰기)
 rm hello.txt "hello.txt" 라는 파일을 지웁니다.
+```
+
+### 파이프 Input/Output direction.
+
+- `<` 특정 파일을 명령어의 인풋으로 보냅니다.
 
 ```
+  cmd < file
+```
+
+예제
+
+```bash
+ ls > LIST
+ while read line;
+ do 
+    head -n 1 $i ## 리스트에 있는 각 파일의 첫 행을 프린트 합니다.
+ done < LIST
+```
+ - **>** standard output (stdout) to file (overwrite)
+
+```
+  cmd > file
+```
+
+ - **> /dev/null** discard stout of the *cmd*
+
+```
+ cmd > /dev/null
+```
+
+ - **>>** standard output (stdout) to file (append)
+ 
+```
+ cmd >> /dev/null
+```
+ 
+  - **2>** Error output (stderr) of cmd to file
+
+```
+ cmd 2> file
+```
+
+ - **1>&2** stdout to same place as stderr
+
+```
+  cmd 1>&2
+```
+
+ - **2>&1** stderr to same place as stdout
+
+```
+  cmd 2>&1
+```
+
+ - **|** stout of cmd1 to cmd2
+
+```
+ cmd1 | cmd2
+```
+
+ - **|&** stderr of cmd1 to cmd2
+
+```
+ cmd1 |& cmd2
+```
+
 
 # 디렉토리 관련
 
@@ -97,63 +163,7 @@ rm hello.txt "hello.txt" 라는 파일을 지웁니다.
 파일에 `#` 마크와 함께 코드의 주석을 달아두는 것은 추후, 가독성을 위해 권장됩니다.
 
 
-# 파이프 Input/Output direction.
 
-read more details in [Piping and IO directiom](./)
-
- - **<** read file to the *cmd*.
-
-```
-  cmd < file
-```
-
- - **>** standard output (stdout) to file (overwrite)
-
-```
-  cmd > file
-```
-
- - **> /dev/null** discard stout of the *cmd*
-
-```
- cmd > /dev/null
-```
-
- - **>>** standard output (stdout) to file (append)
- 
-```
- cmd >> /dev/null
-```
- 
-  - **2>** Error output (stderr) of cmd to file
-
-```
- cmd 2> file
-```
-
- - **1>&2** stdout to same place as stderr
-
-```
-  cmd 1>&2
-```
-
- - **2>&1** stderr to same place as stdout
-
-```
-  cmd 2>&1
-```
-
- - **|** stout of cmd1 to cmd2
-
-```
- cmd1 | cmd2
-```
-
- - **|&** stderr of cmd1 to cmd2
-
-```
- cmd1 |& cmd2
-```
 
 # search 
 
