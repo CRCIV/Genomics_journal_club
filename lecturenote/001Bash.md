@@ -189,6 +189,20 @@ rm *.merged*.txt                ## *은 모든 문자에 해당하는 문자입�
   pwd
 ```
 
+## 아까 있었던 곳은 어디?
+
+`$OLDPWD` 변수에는 마지막에 방문했던 위치가 저장된다.
+
+```bash
+pwd          ## 현재폴더를 확인한다       
+mkdir hello  ## hello라는 폴더를 만든다
+cd hello     ## hello라는 폴더로 이동한다
+echo $OLDPWD ## hello 폴더 전에 있던 폴더가 어디인지 출력한다.
+pwd          ## 현재 폴더를 확인한다. (hello folder)
+cd $OLDPWD   ## 과거에 있던 폴더로 돌아간다.  
+pwd          ## 돌아간 폴더가 맞는지 확인해본다.
+```
+
 ## 디렉토리(폴더) 생성/제거
 
 ```bash
@@ -244,7 +258,8 @@ grep '^A' <file>              ## A로 시작하는 라인을 출력한다.
 grep 'TTAGG' <file>           ## 파일에서 TTAGG 를 가지고 있는 라인을 출력한다.
 
 grep -B1 'TTAGG' <file>.       ## 퍼일에서 TTAGG 를가지고 있는 라인 및 그 전 라인을 출력한다.
-grep -B1 'TTAGG\|CCTAA' <file> ## 퍼일에서 TTAGG 혹은 CCTAA 를 가지고 있는 라인 및 그 전 라인을 출력한다.
+grep -A1 'TTAGG\|CCTAA' <file> ## 퍼일에서 TTAGG 혹은 CCTAA 를 가지고 있는 라인 및 그 다음 을 출력한다.
+grep -n 'TTAGG' <file>         ## 파일에서 TTAGG 가 있는 라인 및 그 라인의 번호를 출력한다.
 
 ```
 
@@ -339,22 +354,29 @@ else                           ## 그게 아니라면,
 fi                             ## 조건문 끝!
 ```
 
-* conditional statement
+### conditional statement (예시)
 
--eq : equal to
--ne : not equal
--lt : less than 
--le : les than or equal to
--gt : greater than
--ge : greater than or equal to
-
-## 
-
+- -eq : equal to  (number)
+- -ne : not equal (number)
+- -lt : less than (number)
+- -le : les than or equal to (number)  
+- -gt : greater than (number)
+- -ge : greater than or equal to (number)  
+- == : 두 문자열이 동일
+- != : 두 문자열이 다름
+- !  : conditional statement 가 참이면 거짓, 거짓이면 참을 반환.
+- -d : 디렉토리 유무 확인
+- -e : 파일의 존재 확인
 
 ## for/while 문
 
 ```bash
-for 
+for i in $(seq 1 1 100)      ## i 가 1 에서 100까지 1씩 증가하면서 아래의 do ~ done 사이를 반복한다.
+do 
+   echo $i                   ## $i 를 출력한다.
+done
+
+ls | while read line; do file $line; done;  ## 리스트에 있는 파일 목록을 하나씩 읽어서 그 파일이 무엇인지 출력한다.
 
 ```
 
@@ -362,17 +384,24 @@ for
 
 ## 과거 사용했던 명령어 내역 보기.
 
-`history`
+`history` 
 
+## 일시 정지된 명령어의 지속 수행 및 확인
+
+`ctrl`-`z` 를 누르면 수행하던 작업이 일시정지하고 명령프롬프트를 입력할 수 있는 상태가 됩니다.
+그상태에서
+`jobs` - 현재 백그라운드에 있는 작업을 봅니다.
 `fg` - 일시중지된 작업을 다시 포어그라운드에서 수행.
-
-
 `bg` - 일시중지된 작업을 백그라운드에서 수행.
+`kill jobid` - 일시 중지된 작업을 완전히 정지시킵니다.
 
 ## nohup
 
-- 원격으로 접속해서 사용시, connection 이 끊겨도
+- 원격으로 접속해서 사용시, connection 이 끊겨도 명령어를 수행하도록 헙니다.
 
+```bash
+nohup cmd1 &
+```
 
 # 키보드 단축키
 
@@ -387,13 +416,4 @@ for
 | `Ctrl`-`K`                         | 커서 기준으로 뒤쪽 문자들을 다 지움  |
 | `Ctrl`-`U`                         | 커서 기준으로 앞쪽 문자들을 다 지움 |
 | `Ctrl`-`Y`                         | 붙여넣기 paste        |
-
-
-
-
-
-
-
-
-
-
+| `<tab>`                            | 자동완성              |
