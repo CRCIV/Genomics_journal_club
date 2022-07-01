@@ -1,5 +1,19 @@
 # Basic Bash guide
 
+## GUI vs CLI
+
+<table>
+<tr>
+<td>
+   <img src="http://toastytech.com/guis/win10start.png" width=500>
+</td>
+<td>
+   <img src="https://4.bp.blogspot.com/-LvdztdvQtPw/Wamfwb8KpzI/AAAAAAAAAQo/SpUdMyTj8qIE33fFrifJVL853e-Sh_0OQCLcBGAs/s1600/mkdir.PNG" width=500>
+</td>
+</tr>   
+</table>
+
+
 ## Program
 
 - 윈도우10 의 [ubuntu terminal]() 
@@ -10,6 +24,14 @@
 **주의** : windows 의 커맨드라인 인터페이스인 도스의 경우 명령어 등의 체계가 많이 꽤 많이 다릅니다.
 
 # 쌩기초
+
+## 외부 서버 (리눅스) 접속하기
+
+프로그램마다 접속하는 방법에 차이가 있겠으나,  기본적으로 다음과 같이 접속 할 수 있습니다.
+
+```bash
+ssh <id>@<hostname>
+```
 
 ## 명령 프롬프트
 
