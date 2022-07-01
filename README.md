@@ -9,16 +9,19 @@
 
 ## Upcoming Event : 2022-07-01
 
+1. 병주
+basic bash script lecture
+
+## Upcoming Event : 2022-07-08
+
 1. 병주  
 A beginner's guide to eukaryotic genome annotation.  
 Yandell M and Ence D.  
 *Nat Rev Genet* 2012 13;329–342. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg3174.svg)](https://doi.org/10.1038/nrg3174).   
 (\+ current *Apis cerana* genome annotation)
 
-2. 병주
-basic bash script lecture
 
-## Upcoming Event : 2022-06-24
+## Past Event : 2022-06-24
 
 1. 정현  
 [**Coming of age: ten years of next- generation sequencing technologies**](https://sci-hub.hkvisa.net/10.1038/nrg.2016.49)  
