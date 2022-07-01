@@ -7,18 +7,27 @@
 - 장소 : 29호관 315호
 
 
-## Upcoming Event : 2022-07-01
+## Upccoming event : 2022-07-08
+
+[A hybrid de novo genome assembly of the honeybee, Apis mellifera, with chromosome-length scaffolds](https://pubmed.ncbi.nlm.nih.gov/30961563/)  
+Andreas Wallberg, Ignas Bunikis, Olga Vinnere Pettersson, Mai-Britt Mosbech, Anna K Childers, Jay D Evans, Alexander S Mikheyev, Hugh M Robertson, Gene E Robinson, Matthew T Webster [![DOI](https://zenodo.org/badge/doi/10.1186/s12864-019-5642-0.svg)](https://pubmed.ncbi.nlm.nih.gov/30961563/)
+
+
+## Upcoming Event : 언젠가 ...
+A beginner's guide to eukaryotic genome annotation.  
+Yandell M and Ence D.  
+*Nat Rev Genet* 2012 13;329–342. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg3174.svg)](https://doi.org/10.1038/nrg3174).   
+(\+ current *Apis cerana* genome annotation)
+
+
+## Past Event :
 
 1. 병주
 basic bash script lecture
 
 ## Upcoming Event : 2022-07-08
 
-1. 병주  
-A beginner's guide to eukaryotic genome annotation.  
-Yandell M and Ence D.  
-*Nat Rev Genet* 2012 13;329–342. [![DOI](https://zenodo.org/badge/doi/10.1038/nrg3174.svg)](https://doi.org/10.1038/nrg3174).   
-(\+ current *Apis cerana* genome annotation)
+
 
 
 ## Past Event : 2022-06-24
