@@ -16,10 +16,9 @@
 
 ## Program
 
-- 윈도우10 의 [ubuntu terminal]() 
-- [cygwin]() (window 에서의 리눅스 모방 프로그램)
-- [terminus]()
-- [putty]()
+- 윈도우10 의 [WSL, ubuntu terminal](https://m.blog.naver.com/6116949/221244246623) 
+- [cygwin](https://www.cygwin.com/)/[MinGW](https://sourceforge.net/projects/mingw/) (window 에서의 리눅스 모방 프로그램)
+- [putty](https://putty.org/)
 
 **주의** : windows 의 커맨드라인 인터페이스인 도스의 경우 명령어 등의 체계가 많이 꽤 많이 다릅니다.
 
@@ -53,7 +52,7 @@ ssh <id>@<hostname>
 
     ```bash
     [bjk@CRCIV]: $   ## CRCIV 에 접속해서 컴퓨터를 사용하고 있는 사람은 bjk 라는 일반유져고, 현재 터미널은 입력을 기다리고 있다.
-    [root@CRCIV]: #  ## CRCIV 에 접속해서 컴퓨터를 사용하고 있는 사람은 bjk 라는 일반유져고, 현재 터미널은 입력을 기다리고 있다.
+    [root@CRCIV]: #  ## CRCIV 에 접속해서 컴퓨터를 사용하고 있는 사람은 root 라고 하는 슈퍼유져 (관리자) 이고, 현재 터미널은 입력을 기다리고 있다.
     ```
 
 - `$` 는 접속한 사람이 일반 유져 계정을 사용하고 있다는 의미이고,  
@@ -254,7 +253,7 @@ grep -B1 'TTAGG\|CCTAA' <file> ## 퍼일에서 TTAGG 혹은 CCTAA 를 가지고 
 한번에 모든 파일 내용을 출력. 파일이 너무 클 경우 현기증 나는 상황이 발생할 수 있음 (가령, 10분 넘게 출력되는 파일을 보게 된다거나..)
 
 ```bash
-car <file>
+cat <file>
 ```
 
 ## less/more
@@ -263,7 +262,8 @@ cat 의 단점을 보완하기 위해 만들어진 명령어로, 한번에 일�
 `q` 키룰 눌러서 종료할수 있으며, `down` arrow 키를 눌러서 파일을 계속 볼 수 있음
 
 ```bash
-cat <file>
+less <file>
+more <file>
 ```
 
 ## sed/tr
@@ -284,6 +284,19 @@ cat <file>
   
   echo "hello WORLD hello" | sed -e 's/l/L/3'  ## 3번째 l 매칭만 대문자인 L 로 바꾼다.
 ```
+## 테이블 형식의 파일 다루기
+
+1. cut
+
+```bash
+  cut -f <columns> <file>
+```
+
+
+
+2. paste
+
+3. awk
 
 ## 문자열 뒤집기
 
@@ -303,6 +316,45 @@ echo "TTAGG" | rev | tr "ACGT" "TGCA"
 ```
 # 프로그래밍 관련
 
+## 변수
+
+```bash
+a=123     #변수 지정   
+echo $a   #변수를 확인할 때에는 $a 등 변수앞에 $ 를 붙여서 사용한다.
+a=$(ls | head -n 1) #변수는 다음과 같이 명령어들을 조합하여 만들 수도 있다.
+```
+
+## 조건 문 (if/else 문
+
+```bash
+if [ <conditional statement> ]  ## 특정 조건을 만족하나요?
+then                            ## 만족한다면
+   cmd1                         ## cmd1 명령어를 수행하세요.
+elif [ <another conditional statement> ] ## 그게 아니고 이 조건을 만족한다면
+   cmd2                        ## cmd2 명령어를 수행하세요.
+else                           ## 그게 아니라면,
+   cmd3                        ## cmd3 명령어를 수행하세요.
+fi                             ## 조건문 끝!
+```
+
+* conditional statement
+
+-eq : equal to
+-ne : not equal
+-lt : less than 
+-le : les than or equal to
+-gt : greater than
+-ge : greater than or equal to
+
+## 
+
+
+## for/while 문
+
+```bash
+for 
+
+```
 
 # 작업 관련
 
