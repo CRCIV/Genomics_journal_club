@@ -309,9 +309,18 @@ more <file>
   cut -f <columns> <file>
 ```
 
-
-
 2. paste
+
+```bash
+echo A >> a.txt
+echo B >> a.txt
+echo C >> a.txt
+echo D >> b.txt
+echo E >> b.txt
+echo F >> b.txt
+paste a.txt b.txt
+
+```
 
 3. awk
 
