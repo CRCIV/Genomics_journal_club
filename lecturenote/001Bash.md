@@ -106,7 +106,9 @@ cat hello.txt                   ## hello.txt 파일을 프린트합니다.
 cat hello.txt >> hello2.txt     ## hello.txt 파일을 hello2.txt 에 이어씁니다.
 echo "bye CRCIV" >> hello2.txt  ## bye CRCIV 라는 문장을 hello2.txt 에 이어씁니다.
 cat hello.txt hello2.txt hello3.txt > hello.merged.txt ## 기술된 모든 파일들을 hello.merged.txt 라는 파일에 씁니다.
+ls >> hello.merged.txt          ## 폴더안의 파일 이름들을 hello.merged.txt 라는 파일에 이어 씁니다.
 cat * > hello.merged2.txt       ## 디렉토리 내의 모든 파일의 내용을 붙여서 hello.merged2.txt 라는 파일로 만듭니다.
+
 head -n 5 hello.merged2.txt     ## hello.txt 파일의 첫 5 줄을 프린트. ( -n 10 옵션이 기본 )
 rm hello.txt                    ## "hello.txt" 라는 파일을 지웁니다.
 rm hello2.txt hello3.txt        ## 여러 파일을 동시에 지울수 있습니다.
