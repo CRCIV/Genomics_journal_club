@@ -20,15 +20,10 @@ Yandell M and Ence D.
 (\+ current *Apis cerana* genome annotation)
 
 
-## Past Event :
+## Past Event : 2022-07-01
 
 1. 병주
 basic bash script lecture
-
-## Upcoming Event : 2022-07-08
-
-
-
 
 ## Past Event : 2022-06-24
 
