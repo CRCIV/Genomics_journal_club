@@ -145,21 +145,26 @@ KiB Swap: 31998972 total, 24617316 free,  7381656 used. 88397424 avail Mem
 
 ```
 
-# 리뉵수 파일 권한
+# 리눅스 파일 권한
   
 - 리눅스의 모든 파일에는 3종류의 권한이 3 유져 타입에 따라 주어집니다.
 
 ## 파일 권한
   
 - 읽기 (4,r): 파일을 읽을 수 있는 권한
-- 쓰기 (1,w): 파일을 수정하거나, 쓰거나, 지울수 있는 권한
-- 실행 (2,x): 파일을 실행할 권한
+- 쓰기 (2,w): 파일을 수정하거나, 쓰거나, 지울수 있는 권한
+- 실행 (1,x): 파일을 실행할 권한
   
 ## 파일 권한 이해하기
+  
+  ![image](https://user-images.githubusercontent.com/5173179/177912028-fbcf912c-9b94-4355-aeea-b4b447df9749.png)
+
 
 ```
 $ ls -lah
--rwxr-xr--   1 bjkim  crciv   211M Jun 30 01:19 AmHAv3.1_chr_only.fa
+-rwxr-xr--   bjkim  crciv   211M Jun 30 01:19 AmHAv3.1_chr_only.fa
+drwxr-xr-x   bjkim  crciv   160B Jul  8 11:36 test
+lrwxr-xr-x   bjkim  crciv     8B Jul  8 12:27 syri -> syri.log
 ```
   
 - 첫 열의 두번째 글자부터 마지막 글자까지가 3종류의 유져타입에 대해서 지정된 파일 권한입니다.
@@ -167,23 +172,13 @@ $ ls -lah
 - 두번째 3글자는 파일의 고유자의 그룹 (r-x: 파일을 읽고 실행할 수 있는 권한)
 - 3번째 3글자는 그 외의 유져들에 대한 파일 접근 권한입니다. (파일을 읽을 수 있는 권한
   
+## 파일권한주가
+
+  - 파일의 권한은 chmod command 를 통해 바꿀수 있으며
+  - 각각의 숫자는 각 유져의 파일권한의 합입니다.
   
-
-- Owner, Group, Others
-
-# Bash 프로그래밍
-
-
-
-
-# awk
-
-- awk 수행 과정
-
-```mermaid
-graph LR
-  A["Begin Block 처리"] --> B["파일 한줄 읽기"] --> C["AWK command 수행"] --> D["파일의 끝인가?"] ---> | Yes | E["End block 의 명령 수행"] 
-  D --> | No | B
-
-
-```
+```bash
+chmod 777 <file>  ## 모든 유져가 지정된 파일을 읽고 쓰고 실행할수 있게 한다. (r:4, w:2, x:1)
+chmod 755 <file>  ## 파일 소유권자는 모든권한을, 나머지는 파일을 읽고 실행할수 있게한다.
+chmod 764 <file>  ## 파일 소유권자는 모든권한을, 같은 그룹원은 읽고 쓰기를, 나머지는 파일을 읽을 수 있게 한다.
+```  
