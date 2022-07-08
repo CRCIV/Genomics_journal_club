@@ -2,6 +2,9 @@
 
 ## `nano`
 
+<img width="635" alt="image" src="https://user-images.githubusercontent.com/5173179/177894717-43c4c8a8-2457-4010-933e-39d9dbbf7db8.png">
+
+
 - `nano` 는 리눅스 등 커맨드라인의 파일 에디터.
 - 코드 및 데이터의 작성/수정등에 활용
 
@@ -26,11 +29,39 @@ nano <file name>
 
 ```
 
-## `vim` or `vi`
+## `vim`
 
+- `nano` 처럼 linux 에서 사용가능한 에디터
+- `vim` 은 `vi` 업그레이드 버젼으로 여러 불편함을 해소.
 
+### Mode
 
+- `insert mode`  
+  직접 입력
+- `command/visual mode`
+  vim 을 처음 시작하면 켜져 있는 모드.
+  입력 모드에서 `ESC` 키 를 눌러서 전환할 수 있음.
+  파일 저장, 선택, 매크로 등 수행할 수 있다.  
 
+<img width="617" alt="image" src="https://user-images.githubusercontent.com/5173179/177894795-5dffb3c8-a33f-4476-8a8d-c8907306876e.png">
+
+#### command/visual mode
+
+**Copy & Paste**
+
+- `y` 그 라인을 복사
+- `4y` 현 커서부터 4리인을 복사
+- `p`  카피한 라인들을 붙여넣기
+- 
+
+**Macro**
+
+- `q` + a " a 키에 레코딩 시작
+- 작업 수행.
+- `q` 레코딩 종료
+- @a 저장된 작업 수행
+- `@@` 방금 실행되었던 매크로 재실행
+- `10@a` 매크로 10회 실행 
 
 # 리눅스 <-> window 간의 파일 전환
 
@@ -50,31 +81,38 @@ nano <file name>
 
 ```
 $ top
-Processes: 686 total, 2 running, 684 sleeping, 3577 threads                                                                                                                 05:22:15
-Load Avg: 4.05, 4.25, 4.34  CPU usage: 9.88% user, 5.61% sys, 84.49% idle    SharedLibs: 384M resident, 62M data, 30M linkedit.
-MemRegions: 911455 total, 5104M resident, 126M private, 2206M shared. PhysMem: 16G used (3914M wired), 35M unused.
-VM: 86T vsize, 3140M framework vsize, 16987338(0) swapins, 20004002(0) swapouts. Networks: packets: 69940189/84G in, 44208793/17G out.
-Disks: 49282421/694G read, 18825978/341G written.
+top - 09:57:17 up 534 days, 18:17,  7 users,  load average: 3.22, 3.68, 4.38
+Tasks: 767 total,   3 running, 502 sleeping,   1 stopped,   0 zombie
+%Cpu(s):  1.5 us,  2.0 sy,  2.4 ni, 94.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 19673521+total, 10588324 free, 10540156+used, 80745312 buff/cache
+KiB Swap: 31998972 total, 24617316 free,  7381656 used. 88397424 avail Mem
 
-PID    COMMAND      %CPU TIME     #TH   #WQ  #PORTS MEM    PURG   CMPRS  PGRP  PPID  STATE    BOOSTS            %CPU_ME %CPU_OTHRS UID  FAULTS     COW     MSGSENT     MSGRECV
-26393  iTerm2       25.1 28:12.38 13    10   527    353M+  41M-   142M-  26393 1     sleeping *0[10731]         1.48578 1.81275    501  12361484+  1191    8996246+    3378476+
-532    WindowServer 18.8 36:44:51 15    5    11261  3472M  9744K  2297M  532   1     sleeping *0[1]             1.76556 1.29884    88   244290102+ 521059  2030926685+ 2035787676+
-60494  Google Chrom 12.8 23:00.18 11    1    98     40M-   0B     20M    51662 51662 sleeping *0[3]             0.00000 0.00000    501  69851198+  2355    3476922+    1967398+
-60490  Google Chrom 10.4 29:25.91 26    1    247    363M-  0B     100M   51662 51662 sleeping *0[6]             0.00000 0.00000    501  74059963+  43763   6321898+    3518146+
-63836  top          10.0 00:02.75 1/1   0    28     10M    0B     0B     63836 77645 running  *0[1]             0.00000 0.00000    0    9856+      101     2046852+    1023420+
-459    com.apple.Ap 5.8  03:37:12 6     5    331    4144K  0B     2536K  459   1     sleeping  0[1]             0.00000 0.00000    270  194391     57      530474923+  354483575+
-246    coreaudiod   5.6  02:41:49 13    4    891    31M    0B     19M    246   1     sleeping *0[1]             0.00000 0.00000    202  10120597   386     20933678+   5994621+
-57768  Google Chrom 3.9  70:58.51 25    1    2083   1059M  0B     837M   51662 51662 sleeping *0[7]             0.00000 0.00000    501  7974020    12888   21880013+   9444971+
-0      kernel_task  3.5  07:09:40 345/8 0    0      1038M+ 0B     0B     0     0     running   0[0]             0.00000 0.00000    0    920650     14477   1781307094+ 1268450472+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+12693 hanul     30  10 7577712 3.481g   3476 R 100.3  1.9 204277:51 update-manager
+33682 bjkim     20   0  0.106t 0.090t  11696 R 100.0 49.3   1831:56 R
+13249 bjkim     20   0 3007708 1.355g  11228 S   8.3  0.7  67563:06 compiz
+ 1768 bjkim     20   0   43736   4408   3112 R   0.7  0.0   0:00.07 top
+19411 root      20   0   33252  26144   1400 D   0.7  0.0   2:23.62 updatedb.mlocat
+ 5112 sgeadmin  20   0  184828  14792   8012 S   0.3  0.0  12764:04 sge_qmaster
+ 5120 sgeadmin  20   0   62976   3380   1728 S   0.3  0.0   1740:17 sge_execd
+11917 root      20   0  680576  13236   1756 S   0.3  0.0  19479:37 Xorg
+    1 root      20   0  185892   3136   2092 S   0.0  0.0   6:55.98 systemd
+    2 root      20   0       0      0      0 S   0.0  0.0   2:14.73 kthreadd
+    7 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_wq
+    8 root      20   0       0      0      0 S   0.0  0.0  54:05.26 ksoftirqd/0
+    9 root      20   0       0      0      0 I   0.0  0.0 639:56.98 rcu_sched
+   10 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh
+   11 root      rt   0       0      0      0 S   0.0  0.0   1:23.47 migration/0
+   12 root      rt   0       0      0      0 S   0.0  0.0   1:28.25 watchdog/0
+   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0
+   14 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1
+   15 root      rt   0       0      0      0 S   0.0  0.0   1:02.69 watchdog/1
 
 ```
 
 - `ps`   -
- 
 - `kill` -
-
 - `group` -
-
 
 
 # Linux file permission
