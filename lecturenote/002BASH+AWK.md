@@ -49,9 +49,14 @@ nano <file name>
 
 **Copy & Paste**
 
-- `y` 그 라인을 복사
-- `4y` 현 커서부터 4리인을 복사
-- `p`  카피한 라인들을 붙여넣기
+- `yy` 그 라인을 복사
+- `4yy` 현 커서부터 4리인을 복사
+- `pp`  카피한 라인들을 붙여넣기
+- `yaw` or `yiw` 커서 위의 단어를 복사.
+- `dd` 커서가 위치한 라인을 잘라내기
+- `10dd` 커사가 위치한 라인부터 10라인을 잘라내기
+- `d$` 커서가 위차한 문자부터 오른쪽에 있는 문자를 모두 삭제
+- `p` 붙여넣기
 - 
 
 **Macro**
@@ -63,11 +68,33 @@ nano <file name>
 - `@@` 방금 실행되었던 매크로 재실행
 - `10@a` 매크로 10회 실행 
 
+**찾기 혹은 라인 이동**
+- command/visual mode 에서 `/` 입력후 찾는 문자열을 입력.
+- command/visual 모드에서 `:` 입력후 가고자 하는 라인 을 숫자로 입력 
+
+**문자열 치환**
+
+- sed, tr 처름 텍스트에서 문자를 바꿀 수 있음
+- `:` 로 명령어 라인을 열고 차환 수행
+   hello라는 문자를 지윰,
+   ```
+   :s/foo/bar/g ## 라인의 끝까지 foo 를 bar 로 바꿈
+   :s/foo/bar   ## 라인에서 처음 발견하는 foo 룰 bar 로 변경
+   :1,20s/foo/bar/g ## 1~20 라인까지 foo 를 bar 로 변경
+   :20,$s/foo/bar/g ## 20번 라인부터 끝까지 모든 foo 를 bar 로 변경
+   :%s/foo/bar/g ## 전체 파일에 foo를 bar 로 변환
+   ```
+
+
 # 리눅스 <-> window 간의 파일 전환
 
-**- window 에서 리눅스 혹은 리눅스에서 window 로 파일을 보낼 때 종종 라인이 깨져서 나오는 경우 발생
-
+- window 에서 리눅스 혹은 리눅스에서 window 로 파일을 보낼 때 종종 라인이 깨져서 나오는 경우 발생
 - 리눅스와 windows 는 라인의 끝을 나타내는 <new line> 에 각각 다른 문자를 사용함.
+  
+```bash
+dos2unix <file> ## 도스의 new line character 르 linux 의 new line character 로 변경
+unix2dos <file> ## 반대.
+```
 
 
 
